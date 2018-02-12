@@ -32,6 +32,6 @@ def plot_wav(filename):
 
 
 
-print(plot_wav('test_sound.wav'))
+
 
 
