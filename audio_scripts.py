@@ -1,13 +1,16 @@
 '''
 Author:    Piotr Masztalski
 Created:   12.02.2018
+
+A few useful functions for processing audio
 '''
 
+#required packages
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io.wavfile import read as wavread
 
-
+#plot a signal
 def plot_wav(filename):
     #reading the wave file
     fs, signal = wavread(filename)
