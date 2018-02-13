@@ -65,13 +65,3 @@ def plot_spectrogram(filename):
     plt.xlabel("Time [s]")
     plt.ylim(0, 20000)  # adjusting the frequency axis to the human hearing range
     plt.show()
-
-
-plot_wav('test_sound.wav')
-plot_fft('test_sound.wav')
-plot_spectrogram('test_sound.wav')
-
-
-
-
-
