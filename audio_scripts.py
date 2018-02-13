@@ -67,6 +67,8 @@ def plot_spectrogram(filename):
     plt.show()
 
 
+plot_wav('test_sound.wav')
+plot_fft('test_sound.wav')
 plot_spectrogram('test_sound.wav')
 
 
