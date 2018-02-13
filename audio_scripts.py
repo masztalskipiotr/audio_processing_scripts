@@ -56,6 +56,20 @@ def plot_fft(filename):
     plt.show()
 
 
+# plot spectrogram of a signal
+def plot_spectrogram(filename):
+    signal, fs = read(filename)
+    plt.figure(1)
+    plt.specgram(signal, Fs=fs)
+    plt.ylabel("Frequency [Hz]")
+    plt.xlabel("Time [s]")
+    plt.ylim(0, 20000)  # adjusting the frequency axis to the human hearing range
+    plt.show()
+
+
+plot_spectrogram('test_sound.wav')
+
+
 
 
 
